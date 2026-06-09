@@ -69,6 +69,7 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -1928,6 +1929,9 @@ html[data-theme="light"] .moon-icon {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1.25rem;
+    }
     .hero-title {
         font-size: 2.75rem;
     }
@@ -1960,23 +1964,42 @@ html[data-theme="light"] .moon-icon {
     }
 }
 
-@media (max-width: 500px) {
-    .nav-container {
+@media (max-width: 480px) {
+    .container {
         padding: 0 1rem;
     }
+    .section {
+        padding: 3.5rem 0;
+    }
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-container {
+        padding: 0 0.75rem;
+    }
     .nav-actions {
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
     .resume-btn {
-        font-size: 0.75rem !important;
-        padding: 0.4rem 0.8rem !important;
+        font-size: 0.7rem !important;
+        padding: 0.35rem 0.6rem !important;
     }
-    .theme-toggle-btn {
-        width: 2rem;
-        height: 2rem;
+    .logo {
+        font-size: 1.1rem;
     }
-    .theme-toggle-btn i {
-        width: 15px;
-        height: 15px;
+}
+
+@media (max-width: 400px) {
+    .nav-container {
+        padding: 0 0.5rem;
+    }
+    .resume-btn span {
+        display: none;
     }
 }
