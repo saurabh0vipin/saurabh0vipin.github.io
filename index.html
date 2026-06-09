@@ -36,10 +36,6 @@
                 <a href="#contact" class="nav-item">Contact Me</a>
             </nav>
             <div class="nav-actions">
-                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
-                    <i data-lucide="sun" class="sun-icon"></i>
-                    <i data-lucide="moon" class="moon-icon"></i>
-                </button>
                 <a href="resume.pdf" target="_blank" class="btn btn-secondary resume-btn">
                     <span>Resume</span>
                     <i data-lucide="download"></i>
@@ -849,7 +845,10 @@
         const floatingThemeBtn = document.getElementById('floating-theme-toggle');
         if (floatingThemeBtn) {
             floatingThemeBtn.addEventListener('click', () => {
-                document.getElementById('theme-toggle')?.click();
+                const html = document.documentElement;
+                const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                html.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
             });
         }
         // Floating terminal scroll
