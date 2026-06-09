@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saurabh Verma - Senior Backend Engineer Portfolio. Ex-CRED, ex-nurture.farm, ex-WheelsEye. NIT Srinagar Alumnus. Specializing in high-throughput distributed systems.">
+    <title>Saurabh Verma | Senior Backend Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Glow Effect Backdrops -->
+    <div class="glow-bg glow-1" id="glow-1"></div>
+    <div class="glow-bg glow-2" id="glow-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Saurabh.V</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#competitive" class="nav-item">Competitive Coding</a>
+                <a href="#terminal-section" class="nav-item">Terminal</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="resume.pdf" target="_blank" class="btn btn-secondary resume-btn">
+                    <span>Resume</span>
+                    <i data-lucide="download"></i>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer">
+        <div class="mobile-drawer-header">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Saurabh.V</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <button class="mobile-menu-close" aria-label="Close Menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="#about" class="mobile-nav-item">About</a>
+            <a href="#experience" class="mobile-nav-item">Experience</a>
+            <a href="#skills" class="mobile-nav-item">Skills</a>
+            <a href="#competitive" class="mobile-nav-item">Competitive Coding</a>
+            <a href="#terminal-section" class="mobile-nav-item">Terminal</a>
+            <a href="#contact" class="mobile-nav-item">Contact</a>
+            <a href="resume.pdf" target="_blank" class="btn btn-secondary mobile-resume-btn">
+                <span>Download Resume</span>
+                <i data-lucide="download"></i>
+            </a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-badge animate-fade-in">
+                    <span class="pulse-dot"></span>
+                    <span class="badge-text">Available for System Design & Backend Leadership</span>
+                </div>
+                <h1 class="hero-title animate-title">
+                    Building <span class="gradient-text">High-Scale</span> <br>
+                    Distributed Systems.
+                </h1>
+                <p class="hero-subtitle animate-fade-in-delayed">
+                    Hi, I'm <strong>Saurabh Verma</strong>. A Senior Backend Engineer specializing in financial technology, scalable microservices, and database optimization. Formerly designing core transaction engines at <span class="text-highlight">CRED</span>.
+                </p>
+                <div class="hero-stats animate-fade-in-delayed">
+                    <div class="stat-item">
+                        <span class="stat-number">2.5M+</span>
+                        <span class="stat-label">Active Users Managed</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">3.5B+</span>
+                        <span class="stat-label">Transactions Processed</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">&lt;300ms</span>
+                        <span class="stat-label">p95 API Latency</span>
+                    </div>
+                </div>
+                <div class="hero-actions animate-fade-in-delayed">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#experience" class="btn btn-tertiary">
+                        <span>View Work Experience</span>
+                    </a>
+                </div>
+                <div class="social-pills animate-fade-in-delayed">
+                    <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" class="social-pill" title="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/saurabh0vipin" target="_blank" class="social-pill" title="GitHub">
+                        <i data-lucide="github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://leetcode.com/u/saurabh0vipin/" target="_blank" class="social-pill" title="LeetCode">
+                        <i data-lucide="code"></i>
+                        <span>LeetCode</span>
+                    </a>
+                    <a href="mailto:saurabhvipin55@gmail.com" class="social-pill" title="Email">
+                        <i data-lucide="mail"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Introduction</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info">
+                        <p class="lead-text">
+                            I am a passionate Backend Engineer with over 6 years of experience architecting and building high-performance, resilient, and cost-effective distributed systems.
+                        </p>
+                        <p>
+                            My engineering journey is centered on solving hard scalability and latency problems. From building direct-to-farmer e-commerce portals handling country-wide operations to designing high-traffic fintech services for millions of daily active users, I design architectures that prioritize clean separation of concerns, robust monitoring, and optimization.
+                        </p>
+                        <p>
+                            Graduated with a Bachelor of Technology in Information Technology from the <strong>National Institute of Technology (NIT), Srinagar</strong>, I maintain a strong foundation in algorithms and systems. Outside of production, I enjoy competitive programming, system optimization, and exploring the frontiers of AI-assisted software engineering.
+                        </p>
+                        <div class="about-focus-areas">
+                            <h3>Core Focus Areas</h3>
+                            <div class="focus-grid">
+                                <div class="focus-card">
+                                    <i data-lucide="cpu"></i>
+                                    <h4>Distributed Systems</h4>
+                                    <p>High-throughput event-driven microservices built on Kafka, gRPC, and Temporal workflows.</p>
+                                </div>
+                                <div class="focus-card">
+                                    <i data-lucide="database"></i>
+                                    <h4>Data Engineering</h4>
+                                    <p>Highly optimized SQL/NoSQL schemas, caching strategies, and large-scale transaction reconciliation.</p>
+                                </div>
+                                <div class="focus-card">
+                                    <i data-lucide="zap"></i>
+                                    <h4>Performance Tuning</h4>
+                                    <p>Profiling code, optimizing garbage collection, and reducing API response times down to sub-milliseconds.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="visual-card">
+                            <div class="visual-header">
+                                <div class="visual-dots">
+                                    <span class="v-dot red"></span>
+                                    <span class="v-dot yellow"></span>
+                                    <span class="v-dot green"></span>
+                                </div>
+                                <span class="visual-title">saurabh_config.yaml</span>
+                            </div>
+                            <div class="visual-body">
+                                <pre><code class="language-yaml"><span class="key">engineer:</span>
+  <span class="key">name:</span> <span class="string">"Saurabh Verma"</span>
+  <span class="key">role:</span> <span class="string">"Senior Backend Engineer"</span>
+  <span class="key">alma_mater:</span> <span class="string">"NIT Srinagar (IT)"</span>
+  <span class="key">location:</span> <span class="string">"Bengaluru, India"</span>
+
+<span class="key">philosophy:</span>
+  <span class="key">scalability:</span> <span class="string">"Horizontal by default"</span>
+  <span class="key">code_quality:</span> <span class="string">"Self-documenting, test-driven"</span>
+  <span class="key">bottlenecks:</span> <span class="string">"Solve via profiling, not guesswork"</span>
+
+<span class="key">tech_stack:</span>
+  <span class="key">primary:</span> [<span class="string">"Go"</span>, <span class="string">"Java"</span>, <span class="string">"Spring Boot"</span>]
+  <span class="key">messaging:</span> [<span class="string">"Kafka"</span>, <span class="string">"gRPC"</span>, <span class="string">"Protobuf"</span>]
+  <span class="key">storage:</span> [<span class="string">"MySQL"</span>, <span class="string">"Postgres"</span>, <span class="string">"Redis"</span>, <span class="string">"Elastic"</span>]
+  <span class="key">cloud:</span> [<span class="string">"AWS (SQS, ECS, DynamoDB)"</span>, <span class="string">"Temporal"</span>]</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Professional Journey</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- CRED -->
+                    <div class="timeline-item cred-timeline">
+                        <div class="timeline-badge">
+                            <span class="badge-inner"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div class="job-title-group">
+                                    <h3 class="job-title">Backend Engineer</h3>
+                                    <h4 class="company-name text-highlight">CRED</h4>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-duration"><i data-lucide="calendar"></i> April 2023 – Present</span>
+                                    <span class="job-location"><i data-lucide="map-pin"></i> Bengaluru</span>
+                                </div>
+                            </div>
+                            <!-- Very few details as requested -->
+                            <p class="job-summary">
+                                Led high-impact engineering projects to build and scale next-generation consumer wealth and payment features, driving core API performance enhancements and framework adoption across teams.
+                            </p>
+                            <div class="cred-achievements">
+                                <div class="cred-ach-card">
+                                    <span class="cred-ach-number">0 to 1</span>
+                                    <span class="cred-ach-label">CRED Money & NetWorth</span>
+                                </div>
+                                <div class="cred-ach-card">
+                                    <span class="cred-ach-number">-85%</span>
+                                    <span class="cred-ach-label">p95 Latency Reduction</span>
+                                </div>
+                                <div class="cred-ach-card">
+                                    <span class="cred-ach-number">5M+</span>
+                                    <span class="cred-ach-label">First Month Credit Score Users</span>
+                                </div>
+                            </div>
+                            <ul class="job-bullets brief-bullets">
+                                <li><strong>CRED NetWorth & Money:</strong> Spearheaded 0-to-1 development and scalable architectures for personal finance tracking, managing diverse asset classes for <strong>2.5M+ active users</strong> and handling <strong>7M+ daily transactions</strong>.</li>
+                                <li><strong>System Optimization:</strong> Re-engineered money APIs, slashing p95 latency from 2 seconds to <strong>under 300ms</strong> and reducing infrastructure costs by <strong>25%</strong>.</li>
+                                <li><strong>Core Infrastructure:</strong> Authored a high-performance, reusable template rendering library in Go for Credit Score orchestrators, now shared and adopted across multiple microservices.</li>
+                            </ul>
+                            <div class="job-skills">
+                                <span class="skill-tag">Go</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">Elasticsearch</span>
+                                <span class="skill-tag">AWS (DynamoDB, ECS, SQS)</span>
+                                <span class="skill-tag">Kafka</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Distributed Systems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nurture.farm -->
+                    <div class="timeline-item nurture-timeline">
+                        <div class="timeline-badge">
+                            <span class="badge-inner"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div class="job-title-group">
+                                    <h3 class="job-title">Senior Software Engineer (Backend)</h3>
+                                    <h4 class="company-name nurture-color">nurture.farm</h4>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-duration"><i data-lucide="calendar"></i> March 2021 – April 2023</span>
+                                    <span class="job-location"><i data-lucide="map-pin"></i> Bengaluru</span>
+                                </div>
+                            </div>
+                            <p class="job-summary">
+                                Built core infrastructure for India's leading digital agricultural platform, developing e-commerce logistics, agent productivity trackers, and geospatially optimized services.
+                            </p>
+                            <ul class="job-bullets">
+                                <li><strong>Agri-Commerce Engine:</strong> Designed the complete e-commerce backend mapping buyers, sellers, delivery agents, and call-centers; aligned architectures across 4 cross-functional divisions for frictionless order cycles.</li>
+                                <li><strong>Field Agent Platform:</strong> Built an analytics and tracking system for <strong>10,000+ rural outreach agents</strong> to self-track lead pipelines, earnings, and performance targets.</li>
+                                <li><strong>Weather Service & S2 Caching:</strong> Conceptualized a high-performance Weather Forecast Service utilizing Google's <strong>S2 spatial indexing cells</strong>, reducing external API dependencies and vendor costs by <strong>41%</strong>.</li>
+                                <li><strong>Protobuf & I/O Optimization:</strong> Revamped core API endpoints through multithreading, asynchronous execution, and Protobuf serialization, achieving an <strong>89% latency reduction</strong> and cut memory footprint by <strong>54%</strong>.</li>
+                                <li><strong>Device & Context Service:</strong> Created a central notification and device metadata service managing languages, FCM tokens, and localization config at scale.</li>
+                            </ul>
+                            <div class="job-skills">
+                                <span class="skill-tag">Go</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">gRPC</span>
+                                <span class="skill-tag">Protobuf</span>
+                                <span class="skill-tag">Kafka</span>
+                                <span class="skill-tag">Temporal</span>
+                                <span class="skill-tag">Redis</span>
+                                <span class="skill-tag">GraphQL</span>
+                                <span class="skill-tag">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WheelsEye -->
+                    <div class="timeline-item wheelseye-timeline">
+                        <div class="timeline-badge">
+                            <span class="badge-inner"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div class="job-title-group">
+                                    <h3 class="job-title">Software Developer (Backend)</h3>
+                                    <h4 class="company-name wheelseye-color">WheelsEye Technology</h4>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-duration"><i data-lucide="calendar"></i> April 2020 – March 2021</span>
+                                    <span class="job-location"><i data-lucide="map-pin"></i> Gurgaon</span>
+                                </div>
+                            </div>
+                            <p class="job-summary">
+                                Developed payment systems and operations portals for a logistics and fleet management platform, optimizing payment pipelines and reconciling transactions.
+                            </p>
+                            <ul class="job-bullets">
+                                <li><strong>Payment Integrations:</strong> Engineered microservices managing refund processing, card tokenization (debit/credit), and seamless integration with Paytm wallets and UPI handlers.</li>
+                                <li><strong>Resilient Transaction Retries:</strong> Formulated an intelligent retry algorithm for payment tokens, raising the processing success rate from <strong>82% to 88%</strong> and converting failure delays from 15 minutes to instantaneous status.</li>
+                                <li><strong>Reconciliation Engine:</strong> Programmed a high-throughput automated reconciliation system validating and auditing over <strong>300,000 daily Fastag and wallet transactions</strong>.</li>
+                                <li><strong>Operations Portal:</strong> Created the backend for the Customer Executive Portal, cutting call durations from 8 minutes to <strong>3 minutes</strong> by indexing vehicle, operator, and ticket logs.</li>
+                            </ul>
+                            <div class="job-skills">
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">JUnit5</span>
+                                <span class="skill-tag">New Relic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DRDO -->
+                    <div class="timeline-item drdo-timeline">
+                        <div class="timeline-badge">
+                            <span class="badge-inner"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div class="job-title-group">
+                                    <h3 class="job-title">Research & Development Intern</h3>
+                                    <h4 class="company-name drdo-color">DRDO (Defence Research and Development Organisation)</h4>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-duration"><i data-lucide="calendar"></i> December 2018 – February 2019</span>
+                                    <span class="job-location"><i data-lucide="map-pin"></i> Bangalore</span>
+                                </div>
+                            </div>
+                            <ul class="job-bullets">
+                                <li>Researched and implemented Natural Language Processing (NLP) models for topic extraction, analyzing unstructured technical files and classification.</li>
+                            </ul>
+                            <div class="job-skills">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">NLP</span>
+                                <span class="skill-tag">Topic Modelling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <h3>Languages & Frameworks</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">GoLang</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">Spring Boot</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">gRPC / Protobuf</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="server"></i>
+                            </div>
+                            <h3>Distributed Systems & Infra</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">Kafka</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">Microservices Architecture</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">AWS (ECS, SQS, DynamoDB)</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">Temporal Workflows</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="database-backup"></i>
+                            </div>
+                            <h3>Databases & Caching</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">MySQL / PostgreSQL</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">Redis</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">Elasticsearch</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">DynamoDB</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 78%;"></div></div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <span class="skill-name">S2 Spatial Cell Caching</span>
+                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive Coding Section -->
+        <section id="competitive" class="section competitive-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Algorithmic Excellence</span>
+                    <h2 class="section-title">Competitive Programming</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="coding-grid">
+                    <!-- LeetCode Interactive Card -->
+                    <div class="leetcode-card animate-hover-lift">
+                        <div class="leetcode-header">
+                            <div class="lc-logo-group">
+                                <div class="lc-logo-circle">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                        <path d="M16.102 17.93l-2.697 2.607c-.466.45-1.211.45-1.677 0l-5.867-5.67c-.465-.45-.465-1.17 0-1.62l2.697-2.607c.466-.45 1.211-.45 1.677 0l5.867 5.67c.465.45.465 1.17 0 1.62z"/>
+                                        <path d="M8.102 9.93l-2.697 2.607c-.466.45-1.211.45-1.677 0l-2.867-2.77c-.465-.45-.465-1.17 0-1.62l2.697-2.607c.466-.45 1.211-.45 1.677 0l2.867 2.77c.465.45.465 1.17 0 1.62z" fill-opacity="0.6"/>
+                                        <path d="M22.102 13.93l-2.697 2.607c-.466.45-1.211.45-1.677 0l-2.867-2.77c-.465-.45-.465-1.17 0-1.62l2.697-2.607c.466-.45 1.211-.45 1.677 0l2.867 2.77c.465.45.465 1.17 0 1.62z"/>
+                                    </svg>
+                                </div>
+                                <div class="lc-name-details">
+                                    <h3>LeetCode</h3>
+                                    <a href="https://leetcode.com/u/saurabh0vipin/" target="_blank" class="lc-username">@saurabh0vipin <i data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="lc-badge">
+                                <span class="badge-glow-effect"></span>
+                                <span class="lc-badge-text">Guardian</span>
+                            </div>
+                        </div>
+
+                        <div class="leetcode-body">
+                            <div class="lc-progress-circle-wrapper">
+                                <svg class="progress-circle" viewBox="0 0 120 120">
+                                    <circle class="bg" cx="60" cy="60" r="50" />
+                                    <circle class="fg" cx="60" cy="60" r="50" style="stroke-dasharray: 314; stroke-dashoffset: 62;" /> <!-- ~80% Solved -->
+                                </svg>
+                                <div class="progress-text">
+                                    <span class="solved-count">824</span>
+                                    <span class="total-count">/ 1000+</span>
+                                    <span class="circle-label">Solved</span>
+                                </div>
+                            </div>
+
+                            <div class="lc-stats-breakdown">
+                                <div class="lc-bar-stat">
+                                    <div class="lc-bar-header">
+                                        <span class="lc-difficulty easy">Easy</span>
+                                        <span class="lc-count">248<span class="gray-text">/300</span></span>
+                                    </div>
+                                    <div class="lc-bar-track"><div class="lc-bar-fill easy-fill" style="width: 82.6%"></div></div>
+                                </div>
+                                <div class="lc-bar-stat">
+                                    <div class="lc-bar-header">
+                                        <span class="lc-difficulty medium">Medium</span>
+                                        <span class="lc-count">476<span class="gray-text">/600</span></span>
+                                    </div>
+                                    <div class="lc-bar-track"><div class="lc-bar-fill medium-fill" style="width: 79.3%"></div></div>
+                                </div>
+                                <div class="lc-bar-stat">
+                                    <div class="lc-bar-header">
+                                        <span class="lc-difficulty hard">Hard</span>
+                                        <span class="lc-count">100<span class="gray-text">/150</span></span>
+                                    </div>
+                                    <div class="lc-bar-track"><div class="lc-bar-fill hard-fill" style="width: 66.6%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leetcode-footer">
+                            <div class="rating-stat">
+                                <span class="rating-val">2,184</span>
+                                <span class="rating-lbl">Contest Rating (Top 1.1%)</span>
+                            </div>
+                            <div class="rating-divider"></div>
+                            <div class="rating-stat">
+                                <span class="rating-val">Guardian</span>
+                                <span class="rating-lbl">Rank Level</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Awards & Honors -->
+                    <div class="honors-card">
+                        <h3>Contest Accolades</h3>
+                        <div class="honors-list">
+                            <div class="honor-item">
+                                <div class="honor-icon"><i data-lucide="award"></i></div>
+                                <div class="honor-details">
+                                    <h4>ICPC Regionalist</h4>
+                                    <p>Qualified for ICPC Regionals in 2019-20 contest cycle.</p>
+                                </div>
+                            </div>
+                            <div class="honor-item">
+                                <div class="honor-icon"><i data-lucide="award"></i></div>
+                                <div class="honor-details">
+                                    <h4>Google CodeJam</h4>
+                                    <p>Achieved top ranks and advanced to subsequent rounds in multiple CodeJam seasons.</p>
+                                </div>
+                            </div>
+                            <div class="honor-item">
+                                <div class="honor-icon"><i data-lucide="award"></i></div>
+                                <div class="honor-details">
+                                    <h4>CodersBit Pan-India</h4>
+                                    <p>Ranked amongst top contestants in the national coding competition.</p>
+                                </div>
+                            </div>
+                            <div class="honor-item">
+                                <div class="honor-icon"><i data-lucide="award"></i></div>
+                                <div class="honor-details">
+                                    <h4>HackWithInfy 2019</h4>
+                                    <p>Distinguished performance and finalist in national-level hackathon/coding challenges.</p>
+                                </div>
+                            </div>
+                            <div class="honor-item">
+                                <div class="honor-icon"><i data-lucide="award"></i></div>
+                                <div class="honor-details">
+                                    <h4>Codathon - Inter NIT</h4>
+                                    <p>Secured high rank at the annual Inter-NIT coding contest in 2020.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal Section -->
+        <section id="terminal-section" class="section terminal-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Playground</span>
+                    <h2 class="section-title">Interactive Terminal</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <p class="terminal-intro">
+                    Are you a keyboard enthusiast? Interact with my resume directly using this simulated command line. Type <code class="terminal-inline-code">help</code> to list available commands.
+                </p>
+                <div class="terminal-window animate-hover-lift">
+                    <div class="terminal-bar">
+                        <div class="terminal-circles">
+                            <span class="t-circle t-red"></span>
+                            <span class="t-circle t-yellow"></span>
+                            <span class="t-circle t-green"></span>
+                        </div>
+                        <div class="terminal-title">saurabh@backend-core:~</div>
+                        <div class="terminal-action-icons">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-output-line text-muted">Initialising connection to saurabh-backend-v3.2...</div>
+                        <div class="terminal-output-line text-muted">Authentication successful. Session active.</div>
+                        <div class="terminal-output-line">
+                            Welcome to Saurabh Verma's CLI portfolio version 1.0.0.
+                        </div>
+                        <div class="terminal-output-line text-accent">
+                            Type 'help' to see the list of available commands.
+                        </div>
+                        <!-- CLI history will populate here -->
+                        <div class="terminal-input-container">
+                            <span class="terminal-prompt">guest@saurabh-cli:~$</span>
+                            <input type="text" id="terminal-input" autocomplete="off" autofocus spellcheck="false" aria-label="Terminal Input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-card-wrapper">
+                    <div class="contact-card">
+                        <div class="contact-card-glow"></div>
+                        <h3 class="contact-heading">Let's build something scalable.</h3>
+                        <p class="contact-desc">
+                            I am always interested in discussing distributed systems, database internals, low-latency architectures, or backend leadership opportunities.
+                        </p>
+                        <div class="contact-details">
+                            <a href="mailto:saurabhvipin55@gmail.com" class="contact-method animate-hover-lift">
+                                <div class="contact-icon-box">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-method-text">
+                                    <span class="method-label">Direct Email</span>
+                                    <span class="method-value">saurabhvipin55@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" class="contact-method animate-hover-lift">
+                                <div class="contact-icon-box">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div class="contact-method-text">
+                                    <span class="method-label">LinkedIn</span>
+                                    <span class="method-value">saurabh-verma-970117156</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact-action-btn">
+                            <a href="mailto:saurabhvipin55@gmail.com" class="btn btn-primary btn-large">
+                                <i data-lucide="send"></i>
+                                <span>Send a Message</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Saurabh Verma. Built with vanilla HTML/CSS/JS for sub-millisecond loads.</p>
+            <div class="footer-links">
+                <a href="https://github.com/saurabh0vipin" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://leetcode.com/u/saurabh0vipin/" target="_blank" aria-label="LeetCode"><i data-lucide="code"></i></a>
+                <a href="mailto:saurabhvipin55@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
