@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saurabh Verma's backend and coding projects including Line Encoding, C++ Text Editor, and others.">
+    <title>Projects | Saurabh Verma</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Glow Effect Backdrops -->
+    <div class="glow-bg glow-1" id="glow-1"></div>
+    <div class="glow-bg glow-2" id="glow-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Saurabh.V</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">About Me</a>
+                <a href="WorkExperience.html" class="nav-item">Work Experience</a>
+                <a href="Projects.html" class="nav-item active">Projects</a>
+                <a href="CompetitiveProgramming.html" class="nav-item">Competitive Programming</a>
+                <a href="EverythingElse.html" class="nav-item">My Hobbies</a>
+                <a href="ContactMe.html" class="nav-item">Contact Me</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="resume.pdf" target="_blank" class="btn btn-secondary resume-btn">
+                    <span>Resume</span>
+                    <i data-lucide="download"></i>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer">
+        <div class="mobile-drawer-header">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Saurabh.V</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <button class="mobile-menu-close" aria-label="Close Menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-item">About Me</a>
+            <a href="WorkExperience.html" class="mobile-nav-item">Work Experience</a>
+            <a href="Projects.html" class="mobile-nav-item active">Projects</a>
+            <a href="CompetitiveProgramming.html" class="mobile-nav-item">Competitive Programming</a>
+            <a href="EverythingElse.html" class="mobile-nav-item">My Hobbies</a>
+            <a href="ContactMe.html" class="mobile-nav-item">Contact Me</a>
+            <a href="resume.pdf" target="_blank" class="btn btn-secondary mobile-resume-btn">
+                <span>Download Resume</span>
+                <i data-lucide="download"></i>
+            </a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section scroll-reveal active">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Academic & Personal</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Line Encoding using Python -->
+                    <div class="skills-category-card animate-hover-lift">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="activity"></i>
+                            </div>
+                            <h3>Line Encoding Simulator</h3>
+                        </div>
+                        <p class="job-summary" style="margin-top: -1rem; margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-muted);">October 2018</p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Developed an interactive digital encoding and scrambling simulator in Python with a built-in pseudo-random digital data sequence generator.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>Implemented encoding schemes: <strong>NRZ-L, NRZ-I, Manchester, Differential Manchester, and AMI</strong>.</li>
+                            <li>Implemented high-frequency signal scrambling algorithms: <strong>B8ZS and HDB3</strong>.</li>
+                            <li>Visualized waveforms to demonstrate signal transitions and clock synchronization.</li>
+                        </ul>
+                        <div class="job-skills" style="margin-top: 1.5rem;">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Signal Processing</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">CLI</span>
+                        </div>
+                    </div>
+
+                    <!-- TEXT EDITOR -->
+                    <div class="skills-category-card animate-hover-lift">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="edit-3"></i>
+                            </div>
+                            <h3>Stack-Based Text Editor</h3>
+                        </div>
+                        <p class="job-summary" style="margin-top: -1rem; margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-muted);">August 2018</p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Designed and built a core command-line text editor engine implementing undo, redo, and text modification buffers.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>Engineered structural logic using a **Two-Stack** model to track character insertions, cursors, and state histories.</li>
+                            <li>Applied strict **C++ Object-Oriented Programming (OOP)** paradigms and Standard Template Library (STL) data structures.</li>
+                            <li>Optimized memory allocations for instant operations.</li>
+                        </ul>
+                        <div class="job-skills" style="margin-top: 1.5rem;">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">STL Stacks</span>
+                            <span class="skill-tag">OOP</span>
+                        </div>
+                    </div>
+
+                    <!-- Video Tutorial Website -->
+                    <div class="skills-category-card animate-hover-lift">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="video"></i>
+                            </div>
+                            <h3>Video Tutorial Hub</h3>
+                        </div>
+                        <p class="job-summary" style="margin-top: -1rem; margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-muted);">Aug 2017 - Sept 2017</p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Designed and developed the responsive front-end portal of an online educational website featuring subjects in CS/IT.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>Crafted a fluid layout to structure video playlists, tutorials, articles, and navigation bars.</li>
+                            <li>Employed responsive styling techniques with pure HTML and vanilla CSS grid systems.</li>
+                            <li>Structured semantic HTML schemas for modern web standards.</li>
+                        </ul>
+                        <div class="job-skills" style="margin-top: 1.5rem;">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Responsive Layouts</span>
+                        </div>
+                    </div>
+
+                    <!-- C++ Snake Game -->
+                    <div class="skills-category-card animate-hover-lift">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="gamepad-2"></i>
+                            </div>
+                            <h3>C++ CLI Snake Game</h3>
+                        </div>
+                        <p class="job-summary" style="margin-top: -1rem; margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-muted);">2017</p>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            A retro command-line implementation of the classic Snake Game built in C++ to experiment with terminal render loops.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>Implemented dynamic rendering loops using basic terminal coordinates.</li>
+                            <li>Engineered real-time keyboard input handling and collision detection.</li>
+                            <li>Optimized tick speed increments and score accumulation systems.</li>
+                        </ul>
+                        <div class="job-skills" style="margin-top: 1.5rem;">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Game Loop Logic</span>
+                            <span class="skill-tag">CLI Rendering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Saurabh Verma. Built with vanilla HTML/CSS/JS for sub-millisecond loads.</p>
+            <div class="footer-links">
+                <a href="https://github.com/saurabh0vipin" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://leetcode.com/u/saurabh0vipin/" target="_blank" aria-label="LeetCode"><i data-lucide="code"></i></a>
+                <a href="mailto:saurabhvipin55@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

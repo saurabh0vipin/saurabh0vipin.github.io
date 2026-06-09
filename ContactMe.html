@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Saurabh Verma for backend developer opportunities, system design, or engineering discussions.">
+    <title>Contact Me | Saurabh Verma</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Glow Effect Backdrops -->
+    <div class="glow-bg glow-1" id="glow-1"></div>
+    <div class="glow-bg glow-2" id="glow-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Saurabh.V</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">About Me</a>
+                <a href="WorkExperience.html" class="nav-item">Work Experience</a>
+                <a href="Projects.html" class="nav-item">Projects</a>
+                <a href="CompetitiveProgramming.html" class="nav-item">Competitive Programming</a>
+                <a href="EverythingElse.html" class="nav-item">My Hobbies</a>
+                <a href="ContactMe.html" class="nav-item active">Contact Me</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="resume.pdf" target="_blank" class="btn btn-secondary resume-btn">
+                    <span>Resume</span>
+                    <i data-lucide="download"></i>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer">
+        <div class="mobile-drawer-header">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Saurabh.V</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <button class="mobile-menu-close" aria-label="Close Menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-item">About Me</a>
+            <a href="WorkExperience.html" class="mobile-nav-item">Work Experience</a>
+            <a href="Projects.html" class="mobile-nav-item">Projects</a>
+            <a href="CompetitiveProgramming.html" class="mobile-nav-item">Competitive Programming</a>
+            <a href="EverythingElse.html" class="mobile-nav-item">My Hobbies</a>
+            <a href="ContactMe.html" class="mobile-nav-item active">Contact Me</a>
+            <a href="resume.pdf" target="_blank" class="btn btn-secondary mobile-resume-btn">
+                <span>Download Resume</span>
+                <i data-lucide="download"></i>
+            </a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section scroll-reveal active" style="padding-bottom: 4rem;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-card-wrapper">
+                    <div class="contact-card">
+                        <div class="contact-card-glow"></div>
+                        <h3 class="contact-heading">Let's build something scalable.</h3>
+                        <p class="contact-desc">
+                            I am always interested in discussing distributed systems, database internals, low-latency architectures, or backend leadership opportunities.
+                        </p>
+                        <div class="contact-details" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                            <!-- Email -->
+                            <div class="contact-method animate-hover-lift" style="flex-direction: column; text-align: center; align-items: center;">
+                                <div class="contact-icon-box">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-method-text" style="align-items: center; margin-top: 1rem;">
+                                    <span class="method-label">Direct Email</span>
+                                    <a href="mailto:saurabhvipin55@gmail.com" class="method-value" style="font-size: 0.85rem;">saurabhvipin55@gmail.com</a>
+                                    <a href="mailto:saurabh_it2316@nitsri.net" class="method-value" style="font-size: 0.85rem; margin-top: 0.25rem;">saurabh_it2316@nitsri.net</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="contact-method animate-hover-lift" style="flex-direction: column; text-align: center; align-items: center;">
+                                <div class="contact-icon-box">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-method-text" style="align-items: center; margin-top: 1rem;">
+                                    <span class="method-label">Phone Connection</span>
+                                    <span class="method-value" style="font-size: 0.85rem;">+91 6005147416</span>
+                                    <span class="method-value" style="font-size: 0.85rem; margin-top: 0.25rem;">+91 7839452567</span>
+                                </div>
+                            </div>
+
+                            <!-- Social -->
+                            <div class="contact-method animate-hover-lift" style="flex-direction: column; text-align: center; align-items: center;">
+                                <div class="contact-icon-box">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div class="contact-method-text" style="align-items: center; margin-top: 1rem;">
+                                    <span class="method-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" class="method-value" style="font-size: 0.85rem;">saurabh-verma</a>
+                                    <span class="method-label" style="margin-top: 0.5rem;">GitHub</span>
+                                    <a href="https://github.com/saurabh0vipin" target="_blank" class="method-value" style="font-size: 0.85rem; margin-top: 0.1rem;">@saurabh0vipin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal Section -->
+        <section id="terminal-section" class="section terminal-section scroll-reveal active" style="padding-top: 0; padding-bottom: 8rem;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Playground</span>
+                    <h2 class="section-title">Interactive Terminal</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <p class="terminal-intro">
+                    Are you a keyboard enthusiast? Interact with my resume directly using this simulated command line. Type <code class="terminal-inline-code">help</code> to list available commands.
+                </p>
+                <div class="terminal-window animate-hover-lift">
+                    <div class="terminal-bar">
+                        <div class="terminal-circles">
+                            <span class="t-circle t-red"></span>
+                            <span class="t-circle t-yellow"></span>
+                            <span class="t-circle t-green"></span>
+                        </div>
+                        <div class="terminal-title">saurabh@backend-core:~</div>
+                        <div class="terminal-action-icons">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-output-line text-muted">Initialising connection to saurabh-backend-v3.2...</div>
+                        <div class="terminal-output-line text-muted">Authentication successful. Session active.</div>
+                        <div class="terminal-output-line">
+                            Welcome to Saurabh Verma's CLI portfolio version 1.0.0.
+                        </div>
+                        <div class="terminal-output-line text-accent">
+                            Type 'help' to see the list of available commands.
+                        </div>
+                        <!-- CLI history will populate here -->
+                        <div class="terminal-input-container">
+                            <span class="terminal-prompt">guest@saurabh-cli:~$</span>
+                            <input type="text" id="terminal-input" autocomplete="off" autofocus spellcheck="false" aria-label="Terminal Input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Saurabh Verma. Built with vanilla HTML/CSS/JS for sub-millisecond loads.</p>
+            <div class="footer-links">
+                <a href="https://github.com/saurabh0vipin" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://leetcode.com/u/saurabh0vipin/" target="_blank" aria-label="LeetCode"><i data-lucide="code"></i></a>
+                <a href="mailto:saurabhvipin55@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

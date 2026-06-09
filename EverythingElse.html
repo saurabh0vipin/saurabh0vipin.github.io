@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saurabh Verma's interests, hobbies, movies, cricket, gaming, and puzzle solving.">
+    <title>My Hobbies | Saurabh Verma</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Glow Effect Backdrops -->
+    <div class="glow-bg glow-1" id="glow-1"></div>
+    <div class="glow-bg glow-2" id="glow-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Saurabh.V</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">About Me</a>
+                <a href="WorkExperience.html" class="nav-item">Work Experience</a>
+                <a href="Projects.html" class="nav-item">Projects</a>
+                <a href="CompetitiveProgramming.html" class="nav-item">Competitive Programming</a>
+                <a href="EverythingElse.html" class="nav-item active">My Hobbies</a>
+                <a href="ContactMe.html" class="nav-item">Contact Me</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="resume.pdf" target="_blank" class="btn btn-secondary resume-btn">
+                    <span>Resume</span>
+                    <i data-lucide="download"></i>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer">
+        <div class="mobile-drawer-header">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Saurabh.V</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <button class="mobile-menu-close" aria-label="Close Menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-item">About Me</a>
+            <a href="WorkExperience.html" class="mobile-nav-item">Work Experience</a>
+            <a href="Projects.html" class="mobile-nav-item">Projects</a>
+            <a href="CompetitiveProgramming.html" class="mobile-nav-item">Competitive Programming</a>
+            <a href="EverythingElse.html" class="mobile-nav-item active">My Hobbies</a>
+            <a href="ContactMe.html" class="mobile-nav-item">Contact Me</a>
+            <a href="resume.pdf" target="_blank" class="btn btn-secondary mobile-resume-btn">
+                <span>Download Resume</span>
+                <i data-lucide="download"></i>
+            </a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="section hobbies-section scroll-reveal active">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Beyond Coding</span>
+                    <h2 class="section-title">Interests & Hobbies</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Movies & TV Series -->
+                    <div class="skills-category-card animate-hover-lift">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="film"></i>
+                            </div>
+                            <h3>Cinema & Television</h3>
+                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            If there is one thing I could do all my life without getting bored, it is watching movies and TV series. I have a deep affinity for suspense thrillers and light-hearted comedies.
+                        </p>
+                        <div class="about-focus-areas" style="margin-top: 0;">
+                            <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--accent-primary);">Favorite Movies:</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                                Drishyam, World War Z, The Dictator, Chhichhore
+                            </p>
+                            <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--accent-primary);">Favorite TV Series:</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0;">
+                                Game Of Thrones, Stranger Things, The Kapil Sharma Show, Taarak Mehta Ka Ooltah Chashmah
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Cricket -->
+                    <div class="skills-category-card animate-hover-lift">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="trophy"></i>
+                            </div>
+                            <h3>Cricket & RCB Support</h3>
+                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            I absolutely love watching and playing this beautiful game. When it comes to the IPL, I am a loyal supporter of <strong>Royal Challengers Bangalore (RCB)</strong>.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>My favorite player is the legendary <strong>AB de Villiers</strong>—an absolute genius both on and off the field.</li>
+                            <li>His spectacular play style is the main reason I kept supporting RCB throughout their long seasons without a title!</li>
+                        </ul>
+                    </div>
+
+                    <!-- Gaming (Counter-Strike) -->
+                    <div class="skills-category-card animate-hover-lift">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="gamepad-2"></i>
+                            </div>
+                            <h3>Gaming (Counter Strike)</h3>
+                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Multiplayer first-person shooters have always been a staple of my gaming routine. I enjoy the strategy and team battles of **Counter-Strike**.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>Love setting up local LAN lobbies for intense offline matches with friends.</li>
+                            <li>Enjoys the tactical coordination, map controls, and execution of bomb site attacks.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Puzzles -->
+                    <div class="skills-category-card animate-hover-lift">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="lightbulb"></i>
+                            </div>
+                            <h3>Analytical Puzzles</h3>
+                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            I have a natural inclination toward solving puzzles and logical brain teasers. The struggle of finding the path to the solution is always rewarding.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>Loves deciphering the core trick behind complex puzzles.</li>
+                            <li>Finds immense satisfaction and pleasure in the final "Aha!" moment of obtaining the solution.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Saurabh Verma. Built with vanilla HTML/CSS/JS for sub-millisecond loads.</p>
+            <div class="footer-links">
+                <a href="https://github.com/saurabh0vipin" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://leetcode.com/u/saurabh0vipin/" target="_blank" aria-label="LeetCode"><i data-lucide="code"></i></a>
+                <a href="mailto:saurabhvipin55@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
