@@ -924,12 +924,14 @@ html[data-theme="light"] .moon-icon {
 
 .visual-body pre {
     margin: 0;
+    max-width: 100%;
 }
 
 .visual-body code {
     font-family: 'Fira Code', monospace;
     font-size: 0.85rem;
     line-height: 1.6;
+    max-width: 100%;
 }
 
 .visual-body .key {
@@ -1972,11 +1974,24 @@ html[data-theme="light"] .moon-icon {
     .section {
         padding: 5rem 0;
     }
+    .timeline-content {
+        padding: 1.5rem;
+    }
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    .visual-body {
+        padding: 1rem;
+    }
+    .visual-body pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 1rem;
+        padding: 0 0.75rem;
     }
     .section {
         padding: 3.5rem 0;
@@ -1993,10 +2008,19 @@ html[data-theme="light"] .moon-icon {
     .skills-category-card,
     .leetcode-card,
     .visual-card {
-        padding: 1.25rem !important;
+        padding: 1rem !important;
     }
     .lc-body {
         gap: 1.5rem;
+    }
+    .timeline-content {
+        padding: 1.25rem;
+    }
+    .timeline {
+        padding-left: 1.25rem;
+    }
+    .about-grid {
+        gap: 2rem;
     }
 }
 
