@@ -806,6 +806,12 @@ html[data-theme="light"] .moon-icon {
     align-items: start;
 }
 
+.contest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
 .lead-text {
     font-size: 1.25rem;
     font-weight: 500;
@@ -1901,9 +1907,13 @@ html[data-theme="light"] .moon-icon {
 }
 
 @media (max-width: 968px) {
-    .about-grid {
+    .about-grid,
+    .contest-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+    .contest-grid {
+        gap: 2.5rem;
     }
     .about-visual {
         position: relative;
@@ -1971,11 +1981,22 @@ html[data-theme="light"] .moon-icon {
     .section {
         padding: 3.5rem 0;
     }
+    .hero-section {
+        padding-top: 5rem;
+    }
     .hero-title {
         font-size: 2.25rem;
     }
     .hero-subtitle {
         font-size: 1rem;
+    }
+    .skills-category-card,
+    .leetcode-card,
+    .visual-card {
+        padding: 1.25rem !important;
+    }
+    .lc-body {
+        gap: 1.5rem;
     }
 }
 
