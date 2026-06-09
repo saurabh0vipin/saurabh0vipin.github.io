@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>if('scrollRestoration'in history)history.scrollRestoration='manual';window.scrollTo(0,0)</script>
     <!-- Glow Effect Backdrops -->
     <div class="glow-bg glow-1" id="glow-1"></div>
     <div class="glow-bg glow-2" id="glow-2"></div>
@@ -28,12 +29,11 @@
                 <span class="logo-bracket">/&gt;</span>
             </a>
             <nav class="nav-links">
-                <a href="index.html" class="nav-item active">About Me</a>
-                <a href="WorkExperience.html" class="nav-item">Work Experience</a>
-                <a href="Projects.html" class="nav-item">Projects</a>
-                <a href="CompetitiveProgramming.html" class="nav-item">Competitive Programming</a>
-                <a href="EverythingElse.html" class="nav-item">My Hobbies</a>
-                <a href="ContactMe.html" class="nav-item">Contact Me</a>
+                <a href="#about" class="nav-item active">About Me</a>
+                <a href="#experience" class="nav-item">Work Experience</a>
+                <a href="#competitive" class="nav-item">Competitive Programming</a>
+                <a href="#hobbies" class="nav-item">My Hobbies</a>
+                <a href="#contact" class="nav-item">Contact Me</a>
             </nav>
             <div class="nav-actions">
                 <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
@@ -64,12 +64,11 @@
             </button>
         </div>
         <nav class="mobile-nav-links">
-            <a href="index.html" class="mobile-nav-item active">About Me</a>
-            <a href="WorkExperience.html" class="mobile-nav-item">Work Experience</a>
-            <a href="Projects.html" class="mobile-nav-item">Projects</a>
-            <a href="CompetitiveProgramming.html" class="mobile-nav-item">Competitive Programming</a>
-            <a href="EverythingElse.html" class="mobile-nav-item">My Hobbies</a>
-            <a href="ContactMe.html" class="mobile-nav-item">Contact Me</a>
+            <a href="#about" class="mobile-nav-item active">About Me</a>
+            <a href="#experience" class="mobile-nav-item">Work Experience</a>
+            <a href="#competitive" class="mobile-nav-item">Competitive Programming</a>
+            <a href="#hobbies" class="mobile-nav-item">My Hobbies</a>
+            <a href="#contact" class="mobile-nav-item">Contact Me</a>
             <a href="resume.pdf" target="_blank" class="btn btn-secondary mobile-resume-btn">
                 <span>Download Resume</span>
                 <i data-lucide="download"></i>
@@ -90,48 +89,32 @@
                     Distributed Systems.
                 </h1>
                 <p class="hero-subtitle animate-fade-in-delayed">
-                    Hi, I'm <strong>Saurabh Verma</strong>. A Senior Backend Engineer specializing in financial technology, scalable microservices, and database optimization. Formerly designing core transaction engines at <span class="text-highlight">CRED</span>.
+                    Hi, I'm <strong>Saurabh Verma</strong>. A Senior Backend Engineer specializing in financial technology, scalable microservices, and database optimization. designing investments and tracking products at <span class="text-highlight">CRED</span>.
                 </p>
-                <div class="hero-stats animate-fade-in-delayed">
-                    <div class="stat-item">
-                        <span class="stat-number">Multi-M</span>
-                        <span class="stat-label">Active Users Scale</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">Billions</span>
-                        <span class="stat-label">Transactions Handled</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">Sub-Second</span>
-                        <span class="stat-label">p95 Latency Driven</span>
+                <div class="hero-profile animate-fade-in">
+                    <div class="profile-ring">
+                        <div class="profile-img">
+                            <img src="assets/profile-2.jpeg" alt="Saurabh Verma">
+                        </div>
                     </div>
                 </div>
                 <div class="hero-actions animate-fade-in-delayed">
-                    <a href="ContactMe.html" class="btn btn-primary">
+                    <a href="#contact" class="btn btn-primary">
                         <span>Get In Touch</span>
                         <i data-lucide="arrow-right"></i>
-                    </a>
-                    <a href="WorkExperience.html" class="btn btn-tertiary">
-                        <span>View Work Experience</span>
                     </a>
                 </div>
                 <div class="social-pills animate-fade-in-delayed">
                     <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" class="social-pill" title="LinkedIn">
-                        <i data-lucide="linkedin"></i>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         <span>LinkedIn</span>
                     </a>
                     <a href="https://github.com/saurabh0vipin" target="_blank" class="social-pill" title="GitHub">
-                        <i data-lucide="github"></i>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         <span>GitHub</span>
                     </a>
-                    <a href="https://leetcode.com/u/saurabh0vipin/" target="_blank" class="social-pill" title="LeetCode">
-                        <i data-lucide="code"></i>
-                        <span>LeetCode</span>
-                    </a>
                     <a href="mailto:saurabhvipin55@gmail.com" class="social-pill" title="Email">
-                        <i data-lucide="mail"></i>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
                         <span>Email</span>
                     </a>
                 </div>
@@ -181,6 +164,11 @@
                                     <h4>Performance Tuning</h4>
                                     <p>Profiling code, optimizing garbage collection, and reducing API response times down to sub-milliseconds.</p>
                                 </div>
+                                <div class="focus-card">
+                                    <i data-lucide="bot"></i>
+                                    <h4>Agentic AI & Automations</h4>
+                                    <p>Building LLM-powered agent pipelines for customer issue resolution and developer productivity tooling.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -219,105 +207,494 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section skills-section scroll-reveal">
+        <!-- Work Experience Section -->
+        <section id="experience" class="section experience-section scroll-reveal">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Expertise</span>
-                    <h2 class="section-title">Technical Skills</h2>
+                    <span class="section-subtitle">Professional Journey</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- CRED -->
+                    <div class="timeline-item cred-timeline">
+                        <div class="timeline-badge">
+                            <span class="badge-inner"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div class="job-title-group">
+                                    <h3 class="job-title">Backend Engineer</h3>
+                                    <h4 class="company-name text-highlight">CRED</h4>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-duration"><i data-lucide="calendar"></i> April 2023 – Present</span>
+                                    <span class="job-location"><i data-lucide="map-pin"></i> Bengaluru</span>
+                                </div>
+                            </div>
+                            <ul class="job-bullets brief-bullets">
+                                <li>Building investment and financial tracking products — 0 to 1 initiatives.</li>
+                            </ul>
+                            <div class="job-skills">
+                                <span class="skill-tag">Go</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">Elasticsearch</span>
+                                <span class="skill-tag">AWS (DynamoDB, ECS, SQS)</span>
+                                <span class="skill-tag">Kafka</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Distributed Systems</span>
+                                <span class="skill-tag">LLM/Agentic AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nurture.farm -->
+                    <div class="timeline-item nurture-timeline">
+                        <div class="timeline-badge">
+                            <span class="badge-inner"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div class="job-title-group">
+                                    <h3 class="job-title">Senior Software Engineer (Backend)</h3>
+                                    <h4 class="company-name nurture-color">nurture.farm</h4>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-duration"><i data-lucide="calendar"></i> March 2021 – April 2023</span>
+                                    <span class="job-location"><i data-lucide="map-pin"></i> Bengaluru</span>
+                                </div>
+                            </div>
+                            <p class="job-summary">
+                                Built core infrastructure for India's leading digital agricultural platform, developing e-commerce logistics, agent productivity trackers, and geospatially optimized services.
+                            </p>
+                            <ul class="job-bullets">
+                                <li><strong>Agri-Commerce Engine:</strong> Designed the complete e-commerce backend mapping buyers, sellers, delivery agents, and call-centers; aligned architectures across 4 cross-functional divisions for frictionless order cycles.</li>
+                                <li><strong>Field Agent Platform:</strong> Built an analytics and tracking system for <strong>10,000+ rural outreach agents</strong> to self-track lead pipelines, earnings, and performance targets.</li>
+                                <li><strong>Weather Service & S2 Caching:</strong> Conceptualized a high-performance Weather Forecast Service utilizing Google's <strong>S2 spatial indexing cells</strong>, reducing external API dependencies and vendor costs by <strong>41%</strong>.</li>
+                                <li><strong>Protobuf & I/O Optimization:</strong> Revamped core API endpoints through multithreading, asynchronous execution, and Protobuf serialization, achieving an <strong>89% latency reduction</strong> and cut memory footprint by <strong>54%</strong>.</li>
+                                <li><strong>Device & Context Service:</strong> Created a central notification and device metadata service managing languages, FCM tokens, and localization config at scale.</li>
+                            </ul>
+                            <div class="job-skills">
+                                <span class="skill-tag">Go</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">gRPC</span>
+                                <span class="skill-tag">Protobuf</span>
+                                <span class="skill-tag">Kafka</span>
+                                <span class="skill-tag">Temporal</span>
+                                <span class="skill-tag">Redis</span>
+                                <span class="skill-tag">GraphQL</span>
+                                <span class="skill-tag">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WheelsEye -->
+                    <div class="timeline-item wheelseye-timeline">
+                        <div class="timeline-badge">
+                            <span class="badge-inner"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div class="job-title-group">
+                                    <h3 class="job-title">Software Developer (Backend)</h3>
+                                    <h4 class="company-name wheelseye-color">WheelsEye Technology</h4>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-duration"><i data-lucide="calendar"></i> April 2020 – March 2021</span>
+                                    <span class="job-location"><i data-lucide="map-pin"></i> Gurgaon</span>
+                                </div>
+                            </div>
+                            <p class="job-summary">
+                                Developed payment systems and operations portals for a logistics and fleet management platform, optimizing payment pipelines and reconciling transactions.
+                            </p>
+                            <ul class="job-bullets">
+                                <li><strong>Payment Integrations:</strong> Engineered microservices managing refund processing, card tokenization (debit/credit), and seamless integration with Paytm wallets and UPI handlers.</li>
+                                <li><strong>Resilient Transaction Retries:</strong> Formulated an intelligent retry algorithm for payment tokens, raising the processing success rate from <strong>82% to 88%</strong> and converting failure delays from 15 minutes to instantaneous status.</li>
+                                <li><strong>Reconciliation Engine:</strong> Programmed a high-throughput automated reconciliation system validating and auditing over <strong>300,000 daily Fastag and wallet transactions</strong>.</li>
+                                <li><strong>Operations Portal:</strong> Created the backend for the Customer Executive Portal, cutting call durations from 8 minutes to <strong>3 minutes</strong> by indexing vehicle, operator, and ticket logs.</li>
+                            </ul>
+                            <div class="job-skills">
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">JUnit5</span>
+                                <span class="skill-tag">New Relic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DRDO -->
+                    <div class="timeline-item drdo-timeline">
+                        <div class="timeline-badge">
+                            <span class="badge-inner"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <div class="job-title-group">
+                                    <h3 class="job-title">Research & Development Intern</h3>
+                                    <h4 class="company-name drdo-color">DRDO (Defence Research and Development Organisation)</h4>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-duration"><i data-lucide="calendar"></i> December 2018 – February 2019</span>
+                                    <span class="job-location"><i data-lucide="map-pin"></i> Bangalore</span>
+                                </div>
+                            </div>
+                            <ul class="job-bullets">
+                                <li>Worked on Defence data for various named entity extraction such as PERSON, LOCATION, ORGANIZATION, OfficersRANK, and REGIMENT.</li>
+                                <li>Used CRF Based Custom trained model and Rule Based (TokenRegex) approach for extraction of multiple-word entities.</li>
+                                <li>Used the vocabulary of extracted entities for creation of a document term matrix.</li>
+                                <li>Developed a Python-based program that takes entities instead of words to predict the topic of a document using the Latent Dirichlet Allocation (LDA) algorithm.</li>
+                            </ul>
+                            <div class="job-skills">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">NLP</span>
+                                <span class="skill-tag">Topic Modelling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive Programming Section -->
+        <section id="competitive" class="section competitive-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Algorithmic Excellence</span>
+                    <h2 class="section-title">Competitive Programming</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="coding-grid">
+                    <!-- LeetCode Interactive Card -->
+                    <div class="leetcode-card animate-hover-lift">
+                        <div class="leetcode-header">
+                            <div class="lc-logo-group">
+                                <div class="lc-logo-circle">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                        <path d="M16.102 17.93l-2.697 2.607c-.466.45-1.211.45-1.677 0l-5.867-5.67c-.465-.45-.465-1.17 0-1.62l2.697-2.607c.466-.45 1.211-.45 1.677 0l5.867 5.67c.465.45.465 1.17 0 1.62z"/>
+                                        <path d="M8.102 9.93l-2.697 2.607c-.466.45-1.211.45-1.677 0l-2.867-2.77c-.465-.45-.465-1.17 0-1.62l2.697-2.607c.466-.45 1.211-.45 1.677 0l2.867 2.77c.465.45.465 1.17 0 1.62z" fill-opacity="0.6"/>
+                                        <path d="M22.102 13.93l-2.697 2.607c-.466.45-1.211.45-1.677 0l-2.867-2.77c-.465-.45-.465-1.17 0-1.62l2.697-2.607c.466-.45 1.211-.45 1.677 0l2.867 2.77c.465.45.465 1.17 0 1.62z"/>
+                                    </svg>
+                                </div>
+                                <div class="lc-name-details">
+                                    <h3>LeetCode</h3>
+                                    <a href="https://leetcode.com/u/saurabh_vipin/" target="_blank" class="lc-username">@saurabh_vipin <i data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="lc-badge">
+                                <span class="badge-glow-effect"></span>
+                                <span class="lc-badge-text">Knight</span>
+                            </div>
+                        </div>
+
+                        <div class="leetcode-body">
+                            <div class="lc-progress-circle-wrapper">
+                                <svg class="progress-circle" viewBox="0 0 120 120">
+                                    <circle class="bg" cx="60" cy="60" r="50" />
+                                    <circle class="fg" cx="60" cy="60" r="50" style="stroke-dasharray: 314; stroke-dashoffset: 284;" />
+                                </svg>
+                                <div class="progress-text">
+                                    <span class="solved-count">376</span>
+                                    <span class="total-count">/ 3957+</span>
+                                    <span class="circle-label">Solved</span>
+                                </div>
+                            </div>
+
+                            <div class="lc-stats-breakdown">
+                                <div class="lc-bar-stat">
+                                    <div class="lc-bar-header">
+                                        <span class="lc-difficulty easy">Easy</span>
+                                        <span class="lc-count">128<span class="gray-text">/949</span></span>
+                                    </div>
+                                    <div class="lc-bar-track"><div class="lc-bar-fill easy-fill" style="width: 13.5%"></div></div>
+                                </div>
+                                <div class="lc-bar-stat">
+                                    <div class="lc-bar-header">
+                                        <span class="lc-difficulty medium">Medium</span>
+                                        <span class="lc-count">222<span class="gray-text">/2066</span></span>
+                                    </div>
+                                    <div class="lc-bar-track"><div class="lc-bar-fill medium-fill" style="width: 10.7%"></div></div>
+                                </div>
+                                <div class="lc-bar-stat">
+                                    <div class="lc-bar-header">
+                                        <span class="lc-difficulty hard">Hard</span>
+                                        <span class="lc-count">26<span class="gray-text">/942</span></span>
+                                    </div>
+                                    <div class="lc-bar-track"><div class="lc-bar-fill hard-fill" style="width: 2.8%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leetcode-footer">
+                            <div class="rating-stat">
+                                <span class="rating-val">1,781</span>
+                                <span class="rating-lbl">Contest Rating (Top 8.77%)</span>
+                            </div>
+                            <div class="rating-divider"></div>
+                            <div class="rating-stat">
+                                <span class="rating-val">Knight</span>
+                                <span class="rating-lbl">Rank Level</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Awards & Honors -->
+                    <div class="honors-card">
+                        <h3>Contest Accolades</h3>
+                        <div class="honors-list">
+                            <div class="honor-item">
+                                <div class="honor-icon"><i data-lucide="award"></i></div>
+                                <div class="honor-details">
+                                    <h4>Google CodeJam</h4>
+                                    <p>Achieved top ranks and advanced to subsequent rounds in multiple CodeJam seasons.</p>
+                                </div>
+                            </div>
+                            <div class="honor-item">
+                                <div class="honor-icon"><i data-lucide="award"></i></div>
+                                <div class="honor-details">
+                                    <h4>CodersBit Pan-India</h4>
+                                    <p>Ranked amongst top contestants in the national coding competition.</p>
+                                </div>
+                            </div>
+                            <div class="honor-item">
+                                <div class="honor-icon"><i data-lucide="award"></i></div>
+                                <div class="honor-details">
+                                    <h4>HackWithInfy 2019</h4>
+                                    <p>Distinguished performance and finalist in national-level hackathon/coding challenges.</p>
+                                </div>
+                            </div>
+                            <div class="honor-item">
+                                <div class="honor-icon"><i data-lucide="award"></i></div>
+                                <div class="honor-details">
+                                    <h4>Codathon - Inter NIT</h4>
+                                    <p>Secured high rank at the annual Inter-NIT coding contest in 2020.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-focus-areas" style="margin-top: 5rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem;">Contest Highlights & Coding Profiles</h3>
+                    <div class="about-grid" style="grid-template-columns: 1fr 1fr; gap: 2.5rem;">
+                        <div class="visual-card" style="background-color: var(--card-bg); padding: 2rem; border-radius: 16px;">
+                            <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <i data-lucide="trending-up" style="color: var(--accent-primary);"></i>
+                                Highlight Ranks
+                            </h4>
+                            <ul class="job-bullets" style="margin-bottom: 0;">
+                                <li><strong>Rank 80</strong> in CodeChef April Lunchtime 2019 coding contest.</li>
+                                <li><strong>Rank 165</strong> in CodeChef May Challenge 2019 Division 1 coding contest.</li>
+                                <li><strong>Rank 226</strong> in HackerEarth March Circuit '19 coding contest.</li>
+                                <li><strong>Rank 258</strong> in HackerRank Moody's Analytics 2018 University CodeSprint.</li>
+                                <li><strong>Rank 2064</strong> in Codeforces Round #570 (Div 3) among 10,000+ participants.</li>
+                            </ul>
+                        </div>
+
+                        <div class="visual-card" style="background-color: var(--card-bg); padding: 2rem; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                    <i data-lucide="link" style="color: var(--accent-primary);"></i>
+                                    Platform Connections
+                                </h4>
+                                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                                    Follow my algorithm tracking, submissions, and competitive profiles across platforms:
+                                </p>
+                            </div>
+                            <div class="social-pills" style="margin-top: 0; justify-content: flex-start; gap: 0.75rem;">
+                                <a href="https://www.codechef.com/users/saurabh_vipin" target="_blank" class="social-pill">
+                                    <i data-lucide="award"></i>
+                                    <span>CodeChef</span>
+                                </a>
+                                <a href="http://codeforces.com/profile/saurabh.vipin" target="_blank" class="social-pill">
+                                    <i data-lucide="code-2"></i>
+                                    <span>Codeforces</span>
+                                </a>
+                                <a href="https://www.hackerearth.com/@Saurabh_vipin" target="_blank" class="social-pill">
+                                    <i data-lucide="activity"></i>
+                                    <span>HackerEarth</span>
+                                </a>
+                                <a href="https://www.interviewbit.com/profile/saurabh_vipin" target="_blank" class="social-pill">
+                                    <i data-lucide="check-square"></i>
+                                    <span>InterviewBit</span>
+                                </a>
+                                <a href="https://www.hackerrank.com/Saurabh_vipin" target="_blank" class="social-pill">
+                                    <i data-lucide="terminal"></i>
+                                    <span>HackerRank</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="section hobbies-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Beyond Coding</span>
+                    <h2 class="section-title">Interests & Hobbies</h2>
                     <div class="section-underline"></div>
                 </div>
 
                 <div class="skills-grid">
-                    <div class="skills-category-card">
+                    <div class="skills-category-card animate-hover-lift">
                         <div class="category-header">
                             <div class="category-icon-wrapper">
-                                <i data-lucide="code-2"></i>
+                                <i data-lucide="bar-chart-3"></i>
                             </div>
-                            <h3>Languages & Frameworks</h3>
+                            <h3>Finance & Geopolitics</h3>
                         </div>
-                        <div class="skills-list">
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">GoLang</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 90%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">Java</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">Spring Boot</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 80%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">gRPC / Protobuf</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">Python</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 70%;"></div></div>
-                            </div>
-                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Some of my favorite topics to read and discuss are finance, economics, taxation, and geopolitics. Understanding how money moves, how policies shape markets, and how global events interconnect keeps me endlessly curious.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>Deeply interested in macroeconomic trends, fiscal policy, and tax structures.</li>
+                            <li>Follow geopolitical dynamics and how they influence global trade and technology.</li>
+                            <li>Enjoy analyzing economic incentives behind business and regulatory decisions.</li>
+                        </ul>
                     </div>
 
-                    <div class="skills-category-card">
+                    <div class="skills-category-card animate-hover-lift">
                         <div class="category-header">
                             <div class="category-icon-wrapper">
-                                <i data-lucide="server"></i>
+                                <i data-lucide="trophy"></i>
                             </div>
-                            <h3>Distributed Systems & Infra</h3>
+                            <h3>Sports & Recreation</h3>
                         </div>
-                        <div class="skills-list">
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">Kafka</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 90%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">Microservices Architecture</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 92%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">AWS (ECS, SQS, DynamoDB)</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">Temporal Workflows</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 75%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">Docker</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 80%;"></div></div>
-                            </div>
-                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            I absolutely love watching and playing cricket. When it comes to the IPL, I am a loyal supporter of <strong>Royal Challengers Bangalore (RCB)</strong>. I also enjoy a good game of foosball.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>My favorite player is the legendary <strong>AB de Villiers</strong>—an absolute genius both on and off the field.</li>
+                            <li>His spectacular play style is the main reason I kept supporting RCB throughout their long seasons without a title!</li>
+                            <li>Love playing foosball — a fast-paced game of reflexes and hand-eye coordination.</li>
+                        </ul>
                     </div>
 
-                    <div class="skills-category-card">
+                    <div class="skills-category-card animate-hover-lift">
                         <div class="category-header">
                             <div class="category-icon-wrapper">
-                                <i data-lucide="database-backup"></i>
+                                <i data-lucide="lightbulb"></i>
                             </div>
-                            <h3>Databases & Caching</h3>
+                            <h3>Analytical Puzzles</h3>
                         </div>
-                        <div class="skills-list">
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">MySQL / PostgreSQL</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 88%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">Redis</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">Elasticsearch</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 80%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">DynamoDB</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 78%;"></div></div>
-                            </div>
-                            <div class="skill-item-detailed">
-                                <span class="skill-name">S2 Spatial Cell Caching</span>
-                                <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
-                            </div>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            I have a natural inclination toward solving puzzles and logical brain teasers. The struggle of finding the path to the solution is always rewarding.
+                        </p>
+                        <ul class="job-bullets" style="margin-bottom: 0;">
+                            <li>Loves deciphering the core trick behind complex puzzles.</li>
+                            <li>Finds immense satisfaction and pleasure in the final "Aha!" moment of obtaining the solution.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section scroll-reveal" style="padding-bottom: 4rem;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-card-wrapper">
+                    <div class="contact-card">
+                        <div class="contact-card-glow"></div>
+                        <h3 class="contact-heading">Let's build something scalable.</h3>
+                        <p class="contact-desc">
+                            I am always interested in discussing distributed systems, database internals, low-latency architectures, or backend leadership opportunities.
+                        </p>
+                        <div class="contact-details" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                            <a href="mailto:saurabhvipin55@gmail.com,saurabh_it2316@nitsri.net" class="contact-method animate-hover-lift" style="flex-direction: column; text-align: center; align-items: center; text-decoration: none; color: inherit;">
+                                <div class="contact-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                </div>
+                                <div class="contact-method-text" style="align-items: center; margin-top: 1rem;">
+                                    <span class="method-label">Direct Email</span>
+                                    <span class="method-value" style="font-size: 0.85rem;">saurabhvipin55@gmail.com</span>
+                                    <span class="method-value" style="font-size: 0.85rem; margin-top: 0.25rem;">saurabh_it2316@nitsri.net</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" class="contact-method animate-hover-lift" style="flex-direction: column; text-align: center; align-items: center; text-decoration: none; color: inherit;">
+                                <div class="contact-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                </div>
+                                <div class="contact-method-text" style="align-items: center; margin-top: 1rem;">
+                                    <span class="method-label">LinkedIn</span>
+                                    <span class="method-value" style="font-size: 0.85rem;">saurabh-verma</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/saurabh0vipin" target="_blank" class="contact-method animate-hover-lift" style="flex-direction: column; text-align: center; align-items: center; text-decoration: none; color: inherit;">
+                                <div class="contact-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </div>
+                                <div class="contact-method-text" style="align-items: center; margin-top: 1rem;">
+                                    <span class="method-label">GitHub</span>
+                                    <span class="method-value" style="font-size: 0.85rem;">@saurabh0vipin</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+916005147416" class="contact-method animate-hover-lift" style="flex-direction: column; text-align: center; align-items: center; text-decoration: none; color: inherit;">
+                                <div class="contact-icon-box">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div class="contact-method-text" style="align-items: center; margin-top: 1rem;">
+                                    <span class="method-label">Phone</span>
+                                    <span class="method-value" style="font-size: 0.85rem;">+91 60051 47416</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal Section -->
+        <section id="terminal-section" class="section terminal-section scroll-reveal" style="padding-top: 0; padding-bottom: 8rem;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Playground</span>
+                    <h2 class="section-title">Interactive Terminal</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <p class="terminal-intro">
+                    Are you a keyboard enthusiast? Interact with my resume directly using this simulated command line. Type <code class="terminal-inline-code">help</code> to list available commands.
+                </p>
+                <div class="terminal-window animate-hover-lift">
+                    <div class="terminal-bar">
+                        <div class="terminal-circles">
+                            <span class="t-circle t-red"></span>
+                            <span class="t-circle t-yellow"></span>
+                            <span class="t-circle t-green"></span>
+                        </div>
+                        <div class="terminal-title">saurabh@backend-core:~</div>
+                        <div class="terminal-action-icons">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-output-line text-muted">Initialising connection to saurabh-backend-v3.2...</div>
+                        <div class="terminal-output-line text-muted">Authentication successful. Session active.</div>
+                        <div class="terminal-output-line">
+                            Welcome to Saurabh Verma's CLI portfolio version 1.0.0.
+                        </div>
+                        <div class="terminal-output-line text-accent">
+                            Type 'help' to see the list of available commands.
+                        </div>
+                        <div class="terminal-input-container">
+                            <span class="terminal-prompt">guest@saurabh-cli:~$</span>
+                            <input type="text" id="terminal-input" autocomplete="off" autofocus spellcheck="false" aria-label="Terminal Input">
                         </div>
                     </div>
                 </div>
@@ -330,15 +707,155 @@
         <div class="container footer-container">
             <p class="copyright">&copy; 2026 Saurabh Verma. Built with vanilla HTML/CSS/JS for sub-millisecond loads.</p>
             <div class="footer-links">
-                <a href="https://github.com/saurabh0vipin" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
-                <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-                <a href="https://leetcode.com/u/saurabh0vipin/" target="_blank" aria-label="LeetCode"><i data-lucide="code"></i></a>
-                <a href="mailto:saurabhvipin55@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                <a href="https://github.com/saurabh0vipin" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="https://www.linkedin.com/in/saurabh-verma-970117156/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a href="mailto:saurabhvipin55@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg></a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script>
+    (function() {
+        const username = 'saurabh_vipin';
+        const apiUrl = 'https://leetcode.com/graphql';
+
+        function animateCount(el, target, suffix) {
+            const duration = 1200;
+            const start = performance.now();
+            const initial = 0;
+            function step(now) {
+                const t = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - t, 3);
+                const val = Math.round(initial + (target - initial) * eased);
+                el.textContent = val.toLocaleString() + (suffix || '');
+                if (t < 1) requestAnimationFrame(step);
+            }
+            requestAnimationFrame(step);
+        }
+
+        function updateDifficulty(diff, solved, total) {
+            const difficultyMap = { Easy: 0, Medium: 1, Hard: 2 };
+            const idx = difficultyMap[diff];
+            const barStats = document.querySelectorAll('.lc-bar-stat');
+            if (!barStats[idx]) return;
+            const countEl = barStats[idx].querySelector('.lc-count');
+            const barFill = barStats[idx].querySelector('.lc-bar-fill');
+            if (countEl) {
+                const graySpan = countEl.querySelector('.gray-text');
+                countEl.childNodes[0].textContent = solved + ' ';
+                if (graySpan) graySpan.textContent = '/' + total;
+            }
+            if (barFill && total > 0) {
+                barFill.style.width = (solved / total) * 100 + '%';
+            }
+        }
+
+        function updateProgressCircle(solved, total) {
+            const circleFg = document.querySelector('.progress-circle .fg');
+            if (circleFg && total > 0) {
+                const circumference = 314;
+                circleFg.style.strokeDashoffset = circumference * (1 - Math.min(solved / total, 1));
+            }
+        }
+
+        requestAnimationFrame(function() {
+            const solvedEl = document.querySelector('.solved-count');
+            const totalSolved = parseInt(solvedEl?.textContent.replace(/[,]/g, '')) || 0;
+            if (solvedEl) animateCount(solvedEl, totalSolved, '');
+        });
+
+        const query = {
+            query: `
+                query userProfile($username: String!) {
+                    matchedUser(username: $username) {
+                        submitStats: submitStatsGlobal {
+                            acSubmissionNum {
+                                difficulty
+                                count
+                            }
+                        }
+                        profile {
+                            ranking
+                            reputation
+                        }
+                    }
+                    allQuestionsCount {
+                        difficulty
+                        count
+                    }
+                    userContestRanking(username: $username) {
+                        rating
+                        topPercentage
+                    }
+                }
+            `,
+            variables: { username }
+        };
+
+        fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(query)
+        })
+        .then(res => res.json())
+        .then(data => {
+            const stats = data.data?.matchedUser?.submitStats?.acSubmissionNum;
+            const totals = data.data?.allQuestionsCount;
+            const contest = data.data?.userContestRanking;
+            if (!stats || !totals) return;
+
+            const totalSolved = stats.find(s => s.difficulty === 'All')?.count || 0;
+            const totalQuestions = totals.find(s => s.difficulty === 'All')?.count || 0;
+
+            const solvedEl = document.querySelector('.solved-count');
+            const totalEl = document.querySelector('.total-count');
+            if (solvedEl) animateCount(solvedEl, totalSolved, '');
+            if (totalEl) totalEl.textContent = '/ ' + totalQuestions.toLocaleString() + '+';
+
+            ['Easy', 'Medium', 'Hard'].forEach(diff => {
+                const solved = stats.find(s => s.difficulty === diff)?.count || 0;
+                const total = totals.find(s => s.difficulty === diff)?.count || 0;
+                updateDifficulty(diff, solved, total);
+            });
+
+            updateProgressCircle(totalSolved, totalQuestions);
+
+            if (contest && contest.rating) {
+                const ratingEl = document.querySelector('.leetcode-footer .rating-val');
+                if (ratingEl) {
+                    ratingEl.textContent = Math.round(contest.rating).toLocaleString();
+                }
+            }
+        })
+        .catch(() => {});
+    })();
+    </script>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="floating-btn" id="floating-theme-toggle" aria-label="Toggle Theme" title="Toggle theme">
+            <svg class="flo-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="flo-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="floating-btn" id="floating-terminal-btn" aria-label="Open Terminal" title="Interactive Terminal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </button>
+    </div>
+
+    <script>
+        // Floating theme toggle sync
+        const floatingThemeBtn = document.getElementById('floating-theme-toggle');
+        if (floatingThemeBtn) {
+            floatingThemeBtn.addEventListener('click', () => {
+                document.getElementById('theme-toggle')?.click();
+            });
+        }
+        // Floating terminal scroll
+        document.getElementById('floating-terminal-btn')?.addEventListener('click', () => {
+            document.getElementById('terminal-section')?.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>

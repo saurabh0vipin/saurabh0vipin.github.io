@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Force scroll to top on page refresh
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     // 1. Initialize Lucide Icons
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
@@ -30,14 +36,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Navbar scroll effect
+    // 3. Navbar scroll effect & active section tracking
     const navbar = document.querySelector('.navbar');
+    const navItems = document.querySelectorAll('.nav-item');
+    const sections = document.querySelectorAll('section[id]');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('navbar-scrolled');
         } else {
             navbar.classList.remove('navbar-scrolled');
         }
+
+        let current = '';
+        sections.forEach(section => {
+            const top = section.offsetTop - 120;
+            if (window.scrollY >= top) {
+                current = section.getAttribute('id');
+            }
+        });
+        navItems.forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('href') === '#' + current) {
+                item.classList.add('active');
+            }
+        });
     });
 
     // 4. Dark & Light Theme Switcher
@@ -45,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const htmlElement = document.documentElement;
 
     // Check for saved theme preference or system preference
-    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     htmlElement.setAttribute('data-theme', savedTheme);
 
     if (themeToggleBtn) {
@@ -217,12 +239,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
 
             case 'leetcode':
-                printOutputLine('LeetCode profile status: Guardian (Top 1.1% globally)', 'text-accent');
-                printOutputLine('Total Solved: 824 Problems');
-                printOutputLine('  * Easy: 248 Solved');
-                printOutputLine('  * Medium: 476 Solved');
-                printOutputLine('  * Hard: 100 Solved');
-                printOutputLine('Contest Rating: 2,184');
+                printOutputLine('LeetCode profile status: Knight (Top 8.77% globally)', 'text-accent');
+                printOutputLine('Total Solved: 376 Problems');
+                printOutputLine('  * Easy: 128 Solved');
+                printOutputLine('  * Medium: 222 Solved');
+                printOutputLine('  * Hard: 26 Solved');
+                printOutputLine('Contest Rating: 1,781');
                 break;
 
             case 'contact':
@@ -230,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 printOutputLine('  Email:    saurabhvipin55@gmail.com');
                 printOutputLine('  LinkedIn: linkedin.com/in/saurabh-verma-970117156');
                 printOutputLine('  GitHub:   github.com/saurabh0vipin');
-                printOutputLine('  LeetCode: leetcode.com/u/saurabh0vipin');
+                printOutputLine('  LeetCode: leetcode.com/u/saurabh_vipin');
                 break;
 
             case 'clear':
